@@ -10,6 +10,6 @@ namespace Random_Number_Generator
     {
         static void Main(string[] args)
         {
-        }
-    }
-}
+        }//Main
+    }//Program
+}//Random_Number_Generator
