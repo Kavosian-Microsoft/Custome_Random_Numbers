@@ -17,15 +17,16 @@ namespace Random_Number_Generator
             Console.Title = "Random Number Generator (RNG)";
             try
             {
-                int intStart, intEnd;
+                int intStart, intEnd,intResult;
                 Console.Write("\n\tEnter start number of the the range:");
                 intStart = int.Parse(Console.ReadLine());
                 Console.Write("\n\tEnter Last number of the the range:");
                 intEnd= int.Parse(Console.ReadLine());
                 Random rnd = new Random(DateTime.Now.Second);
+                intResult= rnd.Next(intStart, intEnd);
                 Console.Clear();
-                Console.Write("\n\tRange [{0},{1}) : ===> {2}",intStart,intEnd,rnd.Next(intStart,intEnd)); ;
-                
+
+                Console.Write("\n\tRange [{0},{1}) : ===> {2}",intStart,intEnd,intResult);
             }//try
             catch (Exception ex)
             {
