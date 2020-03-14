@@ -31,7 +31,7 @@ namespace Random_Number_Generator
             catch (Exception ex)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.Write("\n\tAn exception has occured");                
+                Console.Write("\n\tAn exception has occured the exception has got following message \n\t {0}",ex.Message);                
             }//catch
             Console.Write("\n\tPlease press any key to exit...");
             Console.ReadKey();
