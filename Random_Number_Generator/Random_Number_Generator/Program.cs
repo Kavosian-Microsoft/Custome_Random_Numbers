@@ -18,14 +18,18 @@ namespace Random_Number_Generator
             try
             {
                 int intStart, intEnd,intResult;
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.Write("\n\tEnter start number of the the range:");
+                Console.ForegroundColor = ConsoleColor.White;
                 intStart = int.Parse(Console.ReadLine());
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.Write("\n\tEnter Last number of the the range:");
-                intEnd= int.Parse(Console.ReadLine());
+                Console.ForegroundColor = ConsoleColor.White;
+                intEnd = int.Parse(Console.ReadLine());
                 Random rnd = new Random(DateTime.Now.Second);
                 intResult= rnd.Next(intStart, intEnd);
                 Console.Clear();
-
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.Write("\n\tRange [{0},{1}) : ===> {2}",intStart,intEnd,intResult);
             }//try
             catch (Exception ex)
